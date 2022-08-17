@@ -27,8 +27,36 @@
             
         </nav>
         <!-- End of Navigation  -->
+        <!-- Start of Footer -->
+        <footer>
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+            <ul>
+                <li><a href="#" class="active"> HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <p class="copyright">copyright NIIT Project &copy; 2022</p>
+
+        </footer>
+        <!-- End of Footer -->
     </div>
 
     <script src="js/all.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav-icon").click(function(){
+                $("ul").toggleClass("show");
+            })
+        });
+    </script>
 </body>
 </html>

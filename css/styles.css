@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -6,10 +7,12 @@
     text-decoration: none;
 }
 
+/* Start of navbar  */
+
 nav{
     height: 80px;
     width: 100%;
-    background-color: antiquewhite;
+    background-color: rgba(255, 0, 0, 0.969);
 }
 
 .logo{ 
@@ -55,6 +58,7 @@ a.active,a:hover{
     display: none;
 }
 
+/* Start Nav Responsiveness */
 @media(max-width: 1048px){
     .logo {
         font-size: 32px;
@@ -75,7 +79,7 @@ a.active,a:hover{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgba(255, 0, 0, 0.969);
     top: 80px;
     left: -100%;
     text-align: center;
@@ -93,5 +97,71 @@ a.active,a:hover{
         border: none;
         color: skyblue;
     }
-    nav ul.
+    nav ul.show{
+        left:0;
+    }
+}
+
+/* End Nav Responsiveness and*/
+/* End of navbar  */
+
+footer{
+    padding: 40px 0;
+    background-color: rgba(255, 0, 0, 0.969);
+}
+
+footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 5px;
+    /* opacity: 0.3; */
+}
+
+footer .social a:hover{
+    /* opacity: 1; */
+    color: blue;
+    background-color: whitesmoke;
+}
+
+footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    /* opacity: 0.8; */
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+/* footer ul li a :hover{
+    opacity: 1 
+} */
+
+footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
 }
