@@ -18,7 +18,7 @@
                     <li><a href="#" class="active"> HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 
                 <label id="nav-icon">
@@ -28,9 +28,17 @@
         </nav>
         <!-- End of Navigation  -->
 
+
+
         <!-- Start of first Section -->
         <section class="first-section">
             <label>SECURITY TECH <br> SOLUTIONS</label>
+            
+        <!-- wave -->
+        <!-- <svg  class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,133.3C384,85,480,43,576,37.3C672,32,768,64,864,96C960,128,1056,160,1152,154.7C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg> -->
+        <!-- end wave -->
         </section>
         <!-- End of first Section -->
 
@@ -55,14 +63,19 @@
             </div>
             <div class="smartlock">
                     <img src="img/smartlock.png" alt="cctv camera">
-                    <h2> SECURITY CAMERA SYSTEM</h2>
-                    <p> We offer the most recent CCTV equipment, with 
-                        the ability to view from any smart phone.
-                        Night vision and vandal proof cameras are available
-                        for both residential and business use.</p>
+                    <h2> DOOR ACCESS CONTROL </h2>
+                    <ul>
+                        <li> Determine who is allowed to enter or exit</li>
+                        <li>Where they are allowed to exit or enter</li>
+                        <li>When they are allowed to enter or exit</li>
+                    </ul>
             </div>
             
         </section>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        
         <!-- End of second Section -->
 
         <!-- Start of Footer -->
@@ -86,15 +99,9 @@
         </footer>
         <!-- End of Footer -->
     </div>
-
+   <!-- End of maincontainer -->
     <script src="js/all.js"></script>
     <script src="js/jquery.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#nav-icon").click(function(){
-                $("ul").toggleClass("show");
-            })
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
