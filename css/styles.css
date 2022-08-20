@@ -129,10 +129,11 @@ nav a.active, nav a:hover{
     background-attachment: fixed;
     height: 90vh;
     width: 100%;
-    opacity: 0.75;
+    opacity: 1;
     /* wave */
     background-blend-mode: overlay;
     overflow: hidden;
+    position: relative;
 }
 .first-section label{
     font-size: 70px;
@@ -147,20 +148,70 @@ nav a.active, nav a:hover{
     color: var(--primary-color);
     }
 
+    /* wave */
+ 
+.wave-top{
+    position: absolute;
+    width: 100%;
+    color: white;
+    opacity: 1;
+    top: -15%;
+}
+
+.wave{
+    width: 100%;
+    color: crimson;
+    opacity: 1;
+    margin-top: -22%;
+} 
+/* end wave */
+
+/*  Start stroll button*/
+.stroll-btn{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
+.stroll-btn .fa-angles-down{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    height: 30px;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.stroll-btn-link{
+    color: black;
+}
+
+@keyframes scroll-down {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }    
+    60%{
+        opacity: 1;
+    }    
+    100%{
+        opacity: 0;
+        top:30%;
+    }    
+
+}
+/* End stroll button */
+
+
 /* end of first section */
 
 
-/* wave */
-/* 
-.wave{
-    position: absolute;
-    width: 100%;
-    height: 62%;
-    bottom: -140px;
-    color: #fff;
-    opacity: 1;
-} */
-/* end wave */
 
 /* Start of second section */
 
@@ -169,6 +220,7 @@ nav a.active, nav a:hover{
     height: 100vh;
     background-color: var(--primary-color);
     padding: 0 5%;
+    position: relative;
 }
 .second-section label{
     font-size: 40px;
@@ -216,6 +268,29 @@ nav a.active, nav a:hover{
 .second-section .smartlock ::marker{
     color: var(--secondary-color);
 }
+#btn-read{
+    clear: both;
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 50px;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%,-50%);
+    padding:0.5%;
+    color: white;
+    background-color: black;
+    cursor:pointer;
+    border-radius: 50px;
+    font-weight: bold;
+}
+#btn-read:hover{
+    background-color: white;
+    color: black;
+    border-color:white ;
+}
+
+
 
 @media(max-width: 909px){
     
@@ -226,11 +301,22 @@ nav a.active, nav a:hover{
     }
     .fire-alarm, .cctv-camera,.smartlock{
         width: 100%;
-        margin-bottom: 40px ;
+        margin-bottom: 50px ;
+        margin-top: -20px;
     }    
     .second-section .smartlock ul li{
         text-align:center;
     }
+    #btn-read{
+        width: 30%;
+        left: 50%;
+        bottom: 3%;
+        padding:0.5%;
+        
+    
+    }
+    
+    
     
 }
 

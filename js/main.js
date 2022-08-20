@@ -5,11 +5,17 @@ $(document).ready(function(){
     })
     const toTop = document.querySelector(".to-top")
     window.addEventListener("scroll", () =>{
-    if(window.pageYOffset > 100){
-        toTop.classList.add("press")
-    } else{
-        toTop.classList.remove("press")
-    }
-})
+        if(window.pageYOffset > 100){
+            toTop.classList.add("press")
+        } else{
+            toTop.classList.remove("press")
+        }
+    })
+
+    
 });
+
+function myFunction(){
+   document.getElementById("btn-read").onclick = location.href = "contact.html";
+}
 
