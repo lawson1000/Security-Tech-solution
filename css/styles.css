@@ -5,7 +5,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family:sans-serif,serif;
+    font-family:montserrat, product sans, sans-serif,serif;
 }
 html{
     scroll-behavior: smooth;
@@ -25,11 +25,14 @@ nav{
 }
 
 .logo{ 
-    font-size: 35px;
     font-weight: bold;
     color: var(--secondary-color);
     padding: 0 100px;
     line-height: 80px;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 nav ul{
@@ -52,7 +55,7 @@ nav a{
     border-radius: 3px;
 }
 
-nav a.active, nav a:hover{
+nav ul a.active, nav ul a:hover{
     border: 1px solid var(--secondary-color);
     background-color:black;
     transition: .5s;
@@ -251,6 +254,7 @@ nav a.active, nav a:hover{
     height: 150px;
     display: block;
     margin: 0 auto;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -290,7 +294,20 @@ nav a.active, nav a:hover{
     border-color:white ;
 }
 
+@media(max-width: 1048px){
 
+    .second-section{
+        height: 890px;
+    }
+    .fire-alarm, .cctv-camera,.smartlock{
+        margin-top: 5%;
+    }
+    #btn-read{
+        bottom: 10%;
+
+    }
+    
+}
 
 @media(max-width: 909px){
     
@@ -322,6 +339,90 @@ nav a.active, nav a:hover{
 
 
 /* end of second section */
+
+/* Start of third section */
+.services{
+    padding:5%;
+    min-height: 100vh;
+    width: 100%;
+}
+.services h2{
+    text-align: center;
+    font-size: 45px;
+    margin: 3%;
+    color: crimson;
+}
+
+.services-text,.services-img{
+    float: left;
+    width: 50%;
+    height: 400px;
+
+}
+.services-text p{
+    font-size: 20px;
+    font-family: monospace;
+    padding: 5% 0;
+}
+.services-img img{
+    border-radius: 20px;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media(max-width: 1048px){
+
+    .services-text p{
+        font-size: 15px;
+        font-weight: bold;
+        }
+    .services-img img{
+        border-radius: 20px;
+        width: 85%;
+        height: 85% ;
+        
+    }
+}
+
+@media(max-width: 909px){
+.services{
+    height: 890px;
+    margin-top:10% ;
+    }
+.services-text{
+    clear: both;
+    width: 100%;
+    display:block;
+    height: 300px;
+    }
+.services-img{
+    clear: both;
+    height: 350px;
+    width: 100%;
+    display:block;
+}
+.services h2{
+    font-weight: bold;
+}
+
+.services-text p{
+    font-size: 15px;
+    padding: 5% 0;
+    }
+.services-img img{
+    height: 100%;
+    }       
+
+    
+}
+
+
+/* End of third section */
+
 
 /* Start of footer  */
 footer{

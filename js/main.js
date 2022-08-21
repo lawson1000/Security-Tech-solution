@@ -11,6 +11,14 @@ $(document).ready(function(){
             toTop.classList.remove("press")
         }
     })
+    const currentpage = location.pathname;
+    console.log(currentpage)
+    const pages = document.querySelectorAll("nav ul a").forEach(link => {
+            if(link.href.includes(`${currentpage}`)){
+                link.classList.add('active');
+            }
+        });
+    
 
     
 });
