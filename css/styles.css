@@ -13,7 +13,7 @@ html{
 
 
 :root{
-    --primary-color: crimson;
+    --primary-color: rgb(22, 25, 109);
     --secondary-color:white;
 }
 /* Start of navbar  */
@@ -22,6 +22,9 @@ nav{
     height: 80px;
     width: 100%;
     background-color:var(--primary-color);
+    position: sticky;
+    z-index: 2;
+    top: 0;
 }
 
 .logo{ 
@@ -153,19 +156,13 @@ nav ul a.active, nav ul a:hover{
 
     /* wave */
  
-.wave-top{
-    position: absolute;
-    width: 100%;
-    color: white;
-    opacity: 1;
-    top: -15%;
-}
 
 .wave{
     width: 100%;
-    color: crimson;
+    color: white;
     opacity: 1;
     margin-top: -22%;
+    position: absolute;
 } 
 /* end wave */
 
@@ -262,15 +259,23 @@ nav ul a.active, nav ul a:hover{
 
 .second-section h2{
     margin: 20px 0 10px 0;
+    color: var(--secondary-color)
+}
+
+.second-section p{
+    color: silver;
+    font-weight: 500;
 }
 
 .second-section .smartlock ul li{
     list-style: disc;
     list-style-position: inside;
     text-align: left;
+    color: silver;
+    font-weight: 500;
 }
 .second-section .smartlock ::marker{
-    color: var(--secondary-color);
+    color: black
 }
 #btn-read{
     clear: both;
@@ -330,7 +335,7 @@ nav ul a.active, nav ul a:hover{
         bottom: 3%;
         padding:0.5%;
         
-    
+     
     }
     
     
@@ -350,7 +355,7 @@ nav ul a.active, nav ul a:hover{
     text-align: center;
     font-size: 45px;
     margin: 3%;
-    color: crimson;
+    color: var(--primary-color);
 }
 
 .services-text,.services-img{
@@ -422,6 +427,18 @@ nav ul a.active, nav ul a:hover{
 
 
 /* End of third section */
+
+
+
+/* Start of forth section*/
+
+.forth-section{
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+}
+
+/* End of forth section */
 
 
 /* Start of footer  */
