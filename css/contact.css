@@ -1,0 +1,32 @@
+/* Start of contact banner */
+.contact-banner{
+    background-image: url(../img/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact-banner p{
+    font-size: 70px;
+    font-weight:bold;
+    font-family:fantasy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* End of contact banner */
+
+/* Start contact section */
+.contact-section{
+    width: 100%;
+    height: 100vh;
+}
+/* End contact section */
