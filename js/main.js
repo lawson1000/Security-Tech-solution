@@ -40,9 +40,22 @@ $(document).ready(function(){
             }
         }
     })
-    
+
+
 });
 
 function myFunction(){
    document.getElementById("btn-read").onclick = location.href = "OurServices.html";
 }
+
+
+// function contactBg(){
+//     document.getElementById("contact-section").style.backgroundColor= "var(--secondary-color)"
+//     document.getElementById("all-contacts").style.backgroundColor= "var(--primary-color)"
+// }
+
+// function contactBgLeave(){
+//     document.getElementById("contact-section").style.backgroundColor= "var(--primary-color)"
+//     document.getElementById("all-contacts").style.backgroundColor= "var(--secondary-color)"
+// }
+

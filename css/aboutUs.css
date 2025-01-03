@@ -167,7 +167,7 @@ nav ul a.active, nav ul a:hover{
     width: 100%;
     opacity: 1;
     background-blend-mode: overlay;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
@@ -175,7 +175,7 @@ nav ul a.active, nav ul a:hover{
     font-size: 70px;
     font-weight:bold;
     font-family:fantasy;
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -185,105 +185,58 @@ nav ul a.active, nav ul a:hover{
     }
 
 
-
-
-.about-text p{
-    font-size: 30px;
-    font-family: verdana, monospace;
-    padding: 5% 0;
-    color: white;
-
-}
-
-.about-text{
-    float: center;
+.about-section{
+    background-color: var(--primary-color);
+    text-align: center;
     width: 100%;
+    padding: 5% 10%;
     height: 100vh;
 }
-/* body {
-    min-height: 100vh;
+
+
+.about-text{
+    background-color: rgba(0,0 , 0,0.2);
+    box-shadow: -10px -10px 30px  rgba(255, 255, 255,0.5); ;
+    height: 100%;
+    width: 80%;
     display: flex;
-    background-image: url(cherful-positive-young-colleagues-using-laptop-computer.jpg);
-    align-items: center;
     justify-content: center;
-    background-color: #f1f1f1; */
-
-/* 
-.about{
-    background: url(butterfly_cake.jpg) no-repeat;
-    background-size: 55%;
-    background-color: blue;
-    overflow: hidden;
-    padding: 100px 0;
+    align-items: center;
+    margin: auto;
+    border-radius: 35px;
+    padding: 5%;
+    word-wrap: break-word;
 }
-
-.inner-section{
-    width: 55%;
-    float: right;
-    background-color: #d39393;
-    padding: 140px;
-    box-shadow: 12px 12px 8px rgb(0, 0, 0, 0.3);
-}
-
-.inner-section h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-}
-.text {
-    font-size: 13px;
+.about-text p{
+    font-size: 20px;
+    /* padding: 5% 10%; */
     color: white;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+    font-weight: bolder;
+
 }
 
-.skills button {
-    font-size: 22px;
-    text-align: center;
-    letter-spacing: 2px;
-    border: none;
-    border-radius: 20px;
-    padding: 8px;
-    width: 200px;
-    background-color: darkmagenta;
-    color: white;
-    cursor: pointer;
+@media(max-width: 1048px){
+    .about-text{
+        background-color: rgba(0,0 , 0,0.2);
+        box-shadow: -10px -10px 30px  rgba(255, 255, 255,0.5); ;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 35px;
+        padding: 5%;
+        word-wrap: break-word;
+    }
 }
+@media(max-width: 909px){
 
-.skills button:hover{
-    transition: 2s;
-    background-color: #ecf5f5;
-    color: #00999c;
-}
-@media screen and (max-width:120px) {
-    .inner-section{
-        padding: 80px;
-    }
     
+    .about-text {
+        /* padding: 2%; */
+    }
+    .about-text p{
+        font-size: 13px;
+    }
 }
-@media screen and(mas-width:1000px) {
-    .about{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    
-}
-.inner-section{
-    width: 100%;
-}
-
-@media screen and (mas-width:600px) {
-    .about{
-        padding: 0%;
-    }
-    .inner-section{
-        padding: 60px;
-    }
-    .skills button{
-        font-size: 19px;
-        padding: 5px;
-        width: 160px;
-    }
-    
-} */ 
